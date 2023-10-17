@@ -2,8 +2,8 @@
 
 using namespace std;
 
-string N1 = "M jt kdsd lsndd tgmt!";
-string N2 = "a 2a ouei yeaei eeaa!";
+string N1 = "";
+string N2 = "";
 int indexN1 = 0, indexN2 = 0;
 string output = "";
 
@@ -62,8 +62,13 @@ void fixSentenceN2() {
 
 int main() {
 
-	ifstream inpFile("./inp.txt");
-	ofstream outFile("output_000.txt");
+	ifstream inpFile("./input_001.txt");
+	ofstream outFile("./output_001.txt");
+
+    getline(inpFile, N1);
+    getline(inpFile, N2);
+
+
 
 	int prevLetter = 0;
 
@@ -85,6 +90,6 @@ int main() {
 		prevLetter == 1 ? prevLetter = 0 : prevLetter = 1;
     }
 
-    cout << output << endl;
+    outFile << output << endl;
 
 }
