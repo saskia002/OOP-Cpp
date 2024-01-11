@@ -6,6 +6,8 @@
 #include "IGameEngine.cpp"
 #include "EngineFactory.cpp"
 
+// BASED ON THIS: https://github.com/saskia002/oo2022/tree/main/08_alamklassid/kodut%C3%B6%C3%B6/src
+
 using namespace std;
 
 EngineFactory* EngineFactory::instance = NULL;
