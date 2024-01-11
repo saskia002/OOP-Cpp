@@ -170,5 +170,6 @@ public:
 			cout << "Viik!" << endl;
 			return false;
 		}
+	    return false;
     }
 };
